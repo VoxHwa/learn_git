@@ -48,11 +48,16 @@ git status 命令的输出十分详细，但其用语有些繁琐。 Git 有一�
 git status -s
 git status --short
 ```
+简单看颜色就行
+- <font color=Red>红色</font>就是当前文件状态未同步到暂存区
+- <font color=Green>绿色</font>就是已同步
 
 <font color=Green>A</font> 文件已被跟踪，并且未修改，已经放入暂存区
 
 <font color=Green>D</font> 对一个已经备份到git仓库中的文件，进行本地文件删除时，查看状态你就会看到绿色D
 
-<font color=Green>M</font> 本地文件和git暂存区文件一样，出现绿色的M标志
-<font color=Red>??</font>
-对于这四种状态解释可以参考https://www.cnblogs.com/camboy/p/16634288.html
+<font color=Red>M</font> 本地文件和git暂存区文件不一样，出现红色M
+<font color=Green>M</font> 本地文件和git暂存区文件一样，出现绿色M
+![Alt text](image.png)
+<font color=Red>??</font>没有追踪该文件，需要```git add```追踪
+![Alt text](image-1.png)

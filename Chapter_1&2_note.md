@@ -64,16 +64,15 @@ __简单看颜色就行__
 __其实这样解释不完全对，状态栏有两列，除去<font color=Red>??</font>状态
 第一列是绿色状态栏，第二列是红色状态栏
 <font color=Green>M</font><font color=Red>M</font>的状态表示前一次修改已经同步到暂存区，而当前修改并未同步__
+![Alt text](image-2.png)
 
-<img src = "image-2.png" align="left">
-
-<img src = "image.png" align="left">
+![Alt text](image.png)
 
 <font color=Red>??</font>没有追踪该文件，需要```git add```追踪
 
-<img src = "image-1.png" align="left">
+![Alt text](image-1.png)
 
-__也就是凡是出现<font color=Red>红色</font>就要```git add```同步状态__
+#### 也就是凡是出现<font color=Red>红色</font>就要```git add```同步状态
 
 ### 2.c 各类操作
 ```
@@ -138,4 +137,5 @@ doc/*.txt
 
 # 忽略 doc/ 目录及其所有子目录下的 .pdf 文件
 doc/**/*.pdf
+  
 ```

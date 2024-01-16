@@ -77,21 +77,26 @@ __其实这样解释不完全对，状态栏有两列，除去<font color=Red>??
 ### 2.c 各类操作
 ```
 git add
+git reset HEAD 取消暂存
 git commit 
 git commit -a -m
-git remote
+git commit --amend
+git remote 
+git remote -v
+git remote add origin(or self-name) <url>
+git remote rename origin new-name
 git clone
-git push
-git pull
-git restore
-git rm original_name new_name
-git mv
-git diff
+git push 
+git push origin master
+git push -u origin master 绑定
+git pull 拉取远程仓库
+git restore 恢复指定工作区文件到暂存区文件状态
+git rm 移除(同步暂存移除，手动删除会显示不同步)
+git mv original_name new_name 重命名(包含git add)
+git diff 比较，感觉不如GitHub Desktop可视化
 ```
 
-### 2.d
-
-### 2.e 忽略同步文件.gitignore
+### 2.d 忽略同步文件.gitignore
 ```
 *.[oa]
 *~

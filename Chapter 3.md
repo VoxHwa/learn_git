@@ -157,6 +157,12 @@ git push --delete origin oldBranchName      # 删除远程的旧的分支
 
 ### stash apply冲突
 
+### stash apply冲突
+
+类似于```git merge```的处理办法
+
+## 清理stash
+
 可以通过 `git stash drop` 或者 `git stash pop` 来删除 stash 最新的内容。
 
 也可以指定删除内容`git stash drop stash@{n}` 或者 `git stash pop stash@{n}`

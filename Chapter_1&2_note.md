@@ -17,6 +17,15 @@ git config --global user.email "email@example.com"
 ```
 _双引号可加可不加，好像Git新版本没加也是可以的_
 
+__设置代理必备：__
+
+```bash
+git config --global http.proxy socks5://127.0.0.1:port #http代理+端口号
+git config --global https.proxy socks5://127.0.0.1:port #https代理+端口号
+git config --global --list #打印配置表
+git config --global --unset variable #删除某个配置变量
+```
+
 __End of Chapter 1__
 
 ## Chapter 2

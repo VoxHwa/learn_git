@@ -1,8 +1,8 @@
-## Chapter 3
+# Chapter 3
 
 __分支Branch__
 
-### 分支查看命令
+## 分支查看命令
 
 ```bash
 git branch
@@ -143,6 +143,8 @@ git push --delete origin oldBranchName      # 删除远程的旧的分支
 2. 短期分支是我们干活的分支，短期分支可以不用上传到远程，当我们完成了bug的修复，新功能的开发时才需要合并到主分支上。
 3. __多使用分支__来进行开发工作。
 
+# Chapter 4
+
 ## 储藏 stash
 
 很多时候，你在当前分支上工作了一段时间后，东西变得很混乱。你想切换至新的分支而又不想放弃放弃的修改，或者纯粹想先做其他分支的事情的时候，就该`git stash`上场了。
@@ -155,4 +157,4 @@ git push --delete origin oldBranchName      # 删除远程的旧的分支
 
 可以通过 `git stash drop` 或者 `git stash pop` 来删除 stash 最新的内容。
 
-l可以指定删除内容`git stash drop@{n}` 或者 `git stash pop@{n}`
+也可以指定删除内容`git stash drop stash@{n}` 或者 `git stash pop stash@{n}`

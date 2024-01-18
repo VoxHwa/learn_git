@@ -143,3 +143,16 @@ git push --delete origin oldBranchName      # 删除远程的旧的分支
 2. 短期分支是我们干活的分支，短期分支可以不用上传到远程，当我们完成了bug的修复，新功能的开发时才需要合并到主分支上。
 3. __多使用分支__来进行开发工作。
 
+## 储藏 stash
+
+很多时候，你在当前分支上工作了一段时间后，东西变得很混乱。你想切换至新的分支而又不想放弃放弃的修改，或者纯粹想先做其他分支的事情的时候，就该`git stash`上场了。
+
+`stash` 会处理工作目录的的状态，跟踪文件的修改和暂存的改动，然后将未完成的修改保存至一个栈上，这样就可以在后续任何时间切换回来。
+
+通过 `git stash list` 查看所有 stash 的列表
+
+切换至最后 stash 变更，直接执行 `git stash apply` 即可，当然如果有多个，可以通过 `git stash apply stash@{n}` 中的 n 来获取指定的的变更。
+
+可以通过 `git stash drop` 或者 `git stash pop` 来删除 stash 最新的内容。
+
+l可以指定删除内容`git stash drop@{n}` 或者 `git stash pop@{n}`

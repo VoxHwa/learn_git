@@ -101,7 +101,39 @@ git merge 需要合并的分支名称
   2. [使用vimdiff作为git mergetool](https://kinboyw.github.io/2018/10/09/Use-Vimdiff-As-Git-Mergetool/)
   3. [git-mergetool](https://www.lhsz.xyz/read/git-doc-zh/docs-16.md)
 
+## 分支推送远程
 
+先使用`git remote -v`查看远程库的详细信息
+
+```bash
+$ git remote -v
+origin  git@github.com:ProjectOwner/ProjectName.git (fetch)
+origin  git@github.com:ProjectOwner/ProjectName.git (push)
+```
+
+当我们需要推送本地分支到远程时，需要指定具体的本地分支。
+
+```bash
+git push origin branch名称
+```
+
+## 分支的重命名
+
+当我们需要重命名分支的名称时，我们可以使用`git branch`命令来进行，具体方式如下：
+
+```bash
+# oldBranchName: 旧分支名
+# newBranchName ：新分支名
+git branch -m oldBranchName newBranchName
+```
+
+当我们想要将改名后的分支推送到远程时，我们需要进行如下操作：
+
+```bash
+git branch -m oldBranchName newBranchName   # 将本地的分支进行重命名
+git push origin newBranchName               # 将新的分支推送到远程        
+git push --delete origin oldBranchName      # 删除远程的旧的分支 
+```
 
 ## 分支工作原则
 

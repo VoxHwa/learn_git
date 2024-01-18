@@ -153,8 +153,12 @@ git push --delete origin oldBranchName      # 删除远程的旧的分支
 
 通过 `git stash list` 查看所有 stash 的列表
 
-切换至最后 stash 变更，直接执行 `git stash apply` 即可，当然如果有多个，可以通过 `git stash apply stash@{n}` 中的 n 来获取指定的的变更。
+切换至最后y stash 变更，直接执行 `git stash apply` 即可，当然如果有多个，可以通过 `git stash apply stash@{n}` 中的 n 来获取指定的的变更。
+
+### stash apply冲突
 
 可以通过 `git stash drop` 或者 `git stash pop` 来删除 stash 最新的内容。
 
 也可以指定删除内容`git stash drop stash@{n}` 或者 `git stash pop stash@{n}`
+
+## 交互式暂存

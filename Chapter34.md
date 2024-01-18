@@ -168,3 +168,20 @@ __不建议在master上stash__
 也可以指定删除内容`git stash drop stash@{n}` 或者 `git stash pop stash@{n}`
 
 ## 交互式暂存
+
+```bash
+git add -i
+```
+
+根据命令行提示进行操作
+
+```bash
+*** Commands *** 
+  1: status	  2: update	  3: revert	  4: add untracked
+  5: patch	  6: diff	  7: quit	  8: help
+What now>
+```
+
+输入你的操作序号后，它会跳出需要操作执行的文件序号
+
+输入对应数字就是对指定文件进行该操作
